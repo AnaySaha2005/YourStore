@@ -1,0 +1,28 @@
+.f-info{
+    height: 8rem;
+    background-color:#c5c5c5 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-socials{
+    width: 100%;
+}
+.fa-brands{
+    font-size: 1.5 rem;
+    margin-right: 1rem;
+}
+.f-info-socials i:hover{
+   color: #000000;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-top: 5%;
+}

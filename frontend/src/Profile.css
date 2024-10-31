@@ -1,0 +1,13 @@
+.container{
+    margin-top: 2rem;
+}
+.pfp{
+    margin-bottom: 1rem;
+    width: 50%;
+    height: 12%;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+}
+.pfp:hover{
+    box-shadow: 1px 1px 10px 1px rgb(128, 128, 128);
+}

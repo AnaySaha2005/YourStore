@@ -1,0 +1,27 @@
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 5px !important ;
+  padding: 10px;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+@media (max-width: 800px) {
+  .form-inline input {
+    width: 100%;
+  }
+}
+.row{
+  display: flex ;
+}

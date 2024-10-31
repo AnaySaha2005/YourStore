@@ -1,0 +1,22 @@
+.shop{
+    
+    width: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.shop-img{
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(172, 172, 172);
+}
+@media(width<620px){
+    .shop{
+       display: block;
+       text-align: center;
+       margin: auto;
+       margin-top: 10%;
+    }
+  
+   }
