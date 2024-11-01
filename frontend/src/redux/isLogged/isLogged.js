@@ -17,7 +17,10 @@ export const isLoggedSlice = createSlice({
         state.loginData = action.payload;
       }
     },
-   
+    logout: (state) => {
+      state.value = false;
+      state.loginData = {};
+    },
     update: (state, action) => {
       state.loginData.itemList.push(action.payload);
     },
