@@ -18,6 +18,7 @@ export const isLoggedSlice = createSlice({
       }
     },
     logout: (state) => {
+      console.log(state)
       state.value = false;
       state.loginData = {};
     },
