@@ -24,7 +24,7 @@ const isAuthorized = require("./MIddlewares/is Authorized");
 const Retailer = require("./models/retailer");
 const Items = require("./models/items");
 const corsOptions = {
-  origin: "https://your-store-alpha.vercel.app",
+  origin: "http://localhost:5173",
   credentials: true,
 };
 const multer = require("multer");
