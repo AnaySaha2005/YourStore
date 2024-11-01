@@ -32,7 +32,6 @@ const Profile = () => {
     const username = state.username;
     const email = state.email;
     const password = state.password;
-    console.log(event);
     formData.append("file", file);
     formData.append("username", username);
     formData.append("email", email);

@@ -18,6 +18,7 @@ export default function Navbar() {
       });
       
       if (cookie.data == "") {
+        console.log(here)
         dispatch(logout());
         navigate("/");
       }
