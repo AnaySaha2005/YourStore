@@ -35,7 +35,6 @@ const Signup = () => {
     setFormData({...formData})
     try {
       if (type == "User") {
-        console.log(formData)
         data = await axios.post(import.meta.env.VITE_API_URL+"/signup/user", {
           formData,
         });
@@ -49,7 +48,6 @@ const Signup = () => {
           formData,
         });
       }
-      console.log(data);
       if (data.data.error) toast.error(data.data.error);
       else {
         toast.success("successfully registered");

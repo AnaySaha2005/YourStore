@@ -41,6 +41,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        {console.log(islogged)}
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             YourStore
