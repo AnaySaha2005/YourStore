@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
         res
           .cookie("access_token", token, {
             httpOnly: true,
-            sameSite: "none",
+            sameSite: "strict",
             maxAge: "3600000",
           })
           .status(200)
@@ -44,7 +44,7 @@ router.post("/", async (req, res) => {
         res
           .cookie("access_token", token, {
             httpOnly: true,
-            sameSite: "none",
+            sameSite: "strict",
             maxAge: "3600000",
           })
           .status(200)
