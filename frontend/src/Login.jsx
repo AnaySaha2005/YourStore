@@ -7,7 +7,6 @@ import { login } from "./redux/isLogged/isLogged";
 import { toast } from "react-hot-toast";
 const Login = () => {
   const dispatch = useDispatch();
-
   const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",

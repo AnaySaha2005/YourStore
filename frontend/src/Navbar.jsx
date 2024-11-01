@@ -16,6 +16,7 @@ export default function Navbar() {
       const cookie = await axios.get(import.meta.env.VITE_API_URL+"/getcookie", {
         withCredentials: true,
       });
+      
       if (cookie.data == "") {
         dispatch(logout());
         navigate("/");
@@ -41,7 +42,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-md bg-body-tertiary sticky-top">
-        {console.log(islogged)}
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             YourStore

@@ -18,29 +18,28 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: [<Navbar />, <Body />,<Footer/>],
+      element: [<Navbar />, <Body />, <Footer />],
     },
     {
       path: "/login",
-      element: [<Login />,<Footer/>]
+      element: [<Login />, <Footer />],
     },
     {
       path: "/signup",
-      element: [<Signup />,<Footer/>]
+      element: [<Signup />, <Footer />],
     },
     {
       path: "/shop/:id",
-      element: [<Navbar />, <Shop />,<Footer/>],
+      element: [<Navbar />, <Shop />, <Footer />],
     },
     {
       path: "/profile",
-      element: [<Navbar />, <Profile />,<Footer/>],
+      element: [<Navbar />, <Profile />, <Footer />],
       loader: async () => {
         if (!islogged) return redirect("/login");
         return null;
       },
     },
-
   ]);
 
   return (
