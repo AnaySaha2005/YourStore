@@ -58,6 +58,7 @@ app.use("/shop", shopRouter);
 //MISC ROUTING
 
 app.get("/getcookie", (req, res) => {
+  console.log(req.cookies.access_token)
   return res.json(req.cookies.access_token);
 });
 
@@ -146,6 +147,6 @@ app.delete("/:password", isAuthorized, async (req, res) => {
   }
 });
 app.use((err, req, res) => {
-  if (err) res.json(err);
-  return res.json("NO ERROR HERE MAN");
+  if (err)console.log("error at end")
+ else  console.log("NO ERROR HERE MAN");
 });

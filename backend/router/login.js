@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
           process.env.JWT_SECRET,
           {
             expiresIn: "1d",
+            
           }
         );
         let { password, ...rest } = getretailer._doc;
@@ -27,7 +28,7 @@ router.post("/", async (req, res) => {
         res
           .cookie("access_token", token, {
             httpOnly: true,
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: "3600000",
           })
           .status(200)
@@ -43,7 +44,7 @@ router.post("/", async (req, res) => {
         res
           .cookie("access_token", token, {
             httpOnly: true,
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: "3600000",
           })
           .status(200)
