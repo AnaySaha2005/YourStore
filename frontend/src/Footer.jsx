@@ -3,6 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
+      <div class="f-info">
       <div className="about">
         Welcome to YourStore! We know how frustrating it can be to go
         to a store only to find out that the item you need isn't available. Our
@@ -12,7 +13,6 @@ const Footer = () => {
         available. With our service, you can shop smarter, avoid unnecessary
         trips, and get what you need without the guesswork. Happy shopping!
       </div>
-      <div class="f-info">
         <div class="f-info-socials">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
