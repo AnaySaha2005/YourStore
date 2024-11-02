@@ -58,7 +58,6 @@ app.use("/shop", shopRouter);
 //MISC ROUTING
 
 app.get("/getcookie", (req, res) => {
-  console.log(req.cookies.access_token)
   return res.json(req.cookies.access_token);
 });
 
