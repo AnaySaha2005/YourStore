@@ -87,9 +87,7 @@ const Profile = () => {
         <h2>Your Profile</h2>
         <img
           src={
-            userData.image == null
-              ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKK1zSX_YjOvNSHlqwuy84X_WMWRSHNigzpA&s"
-              : userData.image
+            userData.image 
           }
           alt="profile image"
           className="pfp"
@@ -128,9 +126,6 @@ const Profile = () => {
               placeholder="Enter image"
               aria-describedby="emailHelp"
             />
-            <small id="emailHelp" class="form-text text-muted">
-              We'll never share your email with anyone else.
-            </small>
           </div>
           {userData.type == "Retailer" ? (
             <div class="form-group">
