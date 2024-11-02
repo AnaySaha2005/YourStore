@@ -127,6 +127,7 @@ const Profile = () => {
               aria-describedby="emailHelp"
             />
           </div>
+          <br />
           {userData.type == "Retailer" ? (
             <div class="form-group">
               <textarea
